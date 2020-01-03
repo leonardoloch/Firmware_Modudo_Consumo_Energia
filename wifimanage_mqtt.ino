@@ -39,9 +39,6 @@ void setup() {
   Serial.begin(115200);
   Serial.println();
 
-  //clean FS, for testing
-  //SPIFFS.format();
-
   //read configuration from FS json
   Serial.println("mounting FS...");
 
@@ -101,9 +98,7 @@ void setup() {
   IPAddress _ip,_gw,_sn;
   _ip.fromString(static_ip);
   _gw.fromString(static_gw);
-  _sn.fromString(static_sn);
-
-  
+  _sn.fromString(static_sn);  
   
   //add all your parameters here
   wifiManager.addParameter(&custom_mqtt_server);
@@ -168,9 +163,9 @@ void setup() {
   Serial.println(WiFi.subnetMask());
    Serial.println(mqtt_server);
    MQTT.setServer(MQTT_SERVER, 1883);
- Serial.println(".");
- topico_consumo =std::string(mqtt_server) + '/' + std::string(mqtt_port) + '/' + std::string(blynk_token)+"/consumo";
- topico_estado =std::string(mqtt_server) + '/' + std::string(mqtt_port) + '/' + std::string(blynk_token)+"/estado";
+   Serial.println(".");
+   topico_consumo =std::string(mqtt_server) + '/' + std::string(mqtt_port) + '/' + std::string(blynk_token)+"/consumo";
+   topico_estado =std::string(mqtt_server) + '/' + std::string(mqtt_port) + '/' + std::string(blynk_token)+"/estado";
 
 }
 void reconectar() {
