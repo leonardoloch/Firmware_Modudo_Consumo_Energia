@@ -7,3 +7,16 @@ to the system by sending the information or receiving from the server.
 
 This project is result final of my graduated it's just one part, another part is the developer of a device that 
 monitoring the energy electrical: https://github.com/leonardoloch/electricity-monitoring-system-server
+
+
+<h3>Real Module</h3>
+
+![](/images/box_modulo.PNG)
+
+<h3>Components Eletronics</h3>
+
+![](/images/esquematico.JPG)
+
+<h3>View network</h3>
+
+<img src="https://github.com/leonardoloch/electricity-monitoring-system-module/blob/master/images/app_inserir.png?raw=true" height="720">
